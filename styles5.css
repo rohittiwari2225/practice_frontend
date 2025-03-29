@@ -1,0 +1,100 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Ensure the container fits within the viewport */
+/* .containerr {
+    width: 100%; Ensure it doesn't exceed the viewport width 
+    overflow: hidden;  Hide any overflowing content 
+} */
+ /* Ensure the container fits within the viewport */
+.containerr {
+    width: 100%;body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+}
+.containerr .wrapperr{
+    width:80vh;
+    height:40vh;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    margin:5rem auto;
+    overflow: hidden;
+    position:relative;
+}
+.containerr .wrapper-holderr{
+    display: grid;
+    grid-template-columns: repeat(5,100%);
+    height: 100%;
+    width:100%;
+    animation: slider 30s ease-in-out infinite;
+}
+.wrapper-holderr div {
+    width: 100%; /* Ensure each slide takes up the full width */
+    height: 100%; /* Maintain aspect ratio */
+    box-sizing: border-box; /* Include padding and border in width/height */
+background-size: cover;
+background-position: center;
+
+
+}
+.containerr #slider-img-1{
+    background-image: url(home/cyber_security.jpeg);
+    /*background-position: center;*/
+    margin:4px;
+}
+.containerr #slider-img-2{
+    background-image: url(home/programming-background-collage.jpg);
+    /*background-position: center;*/
+    margin:4px;
+}
+.containerr #slider-img-3{
+    background-image: url(home/pure_coding.jpeg);
+    /*background-position: center;*/
+    margin:4px;
+}
+.containerr #slider-img-4{
+    background-image: url(home/side-view-attractive-hispanic-developer-programming-software-using-computer-while-working-from-home.jpg);
+    /*background-position: center;*/
+    margin:4px;
+}
+.containerr #slider-img-5{
+    background-image: url(home/team-database-admins-analyzing-source-code-wall-screen-tv-comparing-errors-using-digital-tablet-busy-server-room-two-cloud-programers-debugging-algorithm-software-innovation-office.jpg);
+    /*background-position: center;*/
+    margin:4px;
+}
+.containerr .button-holderr .buttonn{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display:inline-block;
+    margin: .3rem;
+
+}
+.containerr .button-holderr{
+    position:absolute;
+    left:45%;
+    bottom:0%;
+}
+.buttonn:hover{ box-shadow: 0px 0px 7px 4px rgba(135, 184, 216, 0.6);
+
+}
+@keyframes slider{
+    0%{transform:translateX(0%);}
+    10%{transform:translateX(-100%);}
+    20%{transform:translateX(-100%);}
+    30%{transform:translateX(-200%);}
+    40%{transform:translateX(-200%);}
+    50%{transform:translateX(-200%);}
+    60%{transform:translateX(-300%);}
+    70%{transform:translateX(-300%);}
+    80%{transform:translateX(-300%);}
+    90%{transform:translateX(0%);}
+   100%{transform:translateX(0%);}
+    
+
+}
